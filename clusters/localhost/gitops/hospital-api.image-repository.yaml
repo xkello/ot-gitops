@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: hospital-api
+  namespace: wac-hospital
+spec:
+  image: sempresionus/hospital-wl-api
+  interval: 1m0s

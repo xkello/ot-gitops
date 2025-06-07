@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+images:
+  - name: sempresionus/ambulance-xfe
+    newName: sempresionus/ambulance-xfe # {"$imagepolicy":  "wac-hospital:ambulance-xfe:name"}
+    newTag: main.20250601.2050 # {"$imagepolicy": "wac-hospital:ambulance-xfe:tag"}
+  - name: sempresionus/hospital-wl-api
+    newName: sempresionus/hospital-wl-api # {"$imagepolicy":  "wac-hospital:hospital-api:name"}
+    newTag: main.20250601.1943 # {"$imagepolicy": "wac-hospital:hospital-api:tag"}

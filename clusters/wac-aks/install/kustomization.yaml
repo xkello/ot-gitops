@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: wac-hospital
+
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: wac-hospital
+      app.kubernetes.io/name: x-hospital
+    includeSelectors: true
+    includeTemplates: true
+
+resources:
+  - ../../../apps/x-hospital-xfe
+  - ../../../apps/x-hospital-api
+
+components:
+  - ../../../components/version-release

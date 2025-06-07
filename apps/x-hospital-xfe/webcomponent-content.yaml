@@ -1,0 +1,18 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: x-hospital-xfe-content
+spec:
+  microFrontend: x-hospital-xfe
+  element: x-hospital-app
+  attributes:
+    - name: base-path
+      value: /x-hospital/
+    - name: api-base
+      value: /x-api
+    - name: hospital-id
+      value: hospital-ba
+  displayRules:
+    - allOf:
+      - context-name: main-content
+      - path: "^(\\.?/)?x-hospital(/.*)?$"

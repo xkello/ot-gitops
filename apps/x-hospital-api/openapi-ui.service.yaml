@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: x-openapi-ui
+spec:
+  selector:
+    pod: x-hospital-api-label
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8081
