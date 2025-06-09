@@ -10,4 +10,4 @@ resources:
 
 labels:
 - pairs:
-    app.kubernetes.io/component: x-hospital-xfe
+    app.kubernetes.io/component: ot-hospital-otfe

@@ -6,13 +6,13 @@ namespace: wac-hospital
 labels:
   - pairs:
       app.kubernetes.io/part-of: wac-hospital
-      app.kubernetes.io/name: x-hospital
+      app.kubernetes.io/name: ot-hospital
     includeSelectors: true
     includeTemplates: true
 
 resources:
-  - ../../../apps/x-hospital-xfe
-  - ../../../apps/x-hospital-api
+  - ../../../apps/ot-hospital-otfe
+  - ../../../apps/ot-hospital-api
 
 components:
   - ../../../components/version-release

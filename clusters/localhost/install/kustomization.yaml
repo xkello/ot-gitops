@@ -8,8 +8,8 @@ labels:
       app.kubernetes.io/part-of: wac-hospital
 
 resources:
-  - ../../../apps/x-hospital-xfe
-  - ../../../apps/x-hospital-api
+  - ../../../apps/ot-hospital-otfe
+  - ../../../apps/ot-hospital-api
   - ../../../apps/mongo-express
 
 patches:
@@ -17,4 +17,4 @@ patches:
 
 components:
   - ../../../components/version-developers
-  - https://github.com/Serbel97/ambulance-api//deployments/kustomize/components/mongodb
+  - https://github.com/xkello/ambulance-api//deployments/kustomize/components/mongodb

@@ -4,7 +4,7 @@ kind: Kustomization
 labels:
   - pairs:
       app.kubernetes.io/part-of: wac-hospital
-      app.kubernetes.io/name: x-hospital
+      app.kubernetes.io/name: ot-hospital
 
 namespace: wac-hospital
 

@@ -1,7 +1,7 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
-  name: x-hospital-api
+  name: ot-hospital-api
 spec:
   parentRefs:
     - name: wac-hospital-gateway
@@ -12,7 +12,7 @@ spec:
     - matches:
         - path:
             type: PathPrefix
-            value: /x-api
+            value: /ot-api
       filters:
         - type: URLRewrite
           urlRewrite:
@@ -22,21 +22,21 @@ spec:
       backendRefs:
         - group: ""
           kind: Service
-          name: x-hospital-api
+          name: ot-hospital-api
           port: 80
     - matches:
         - path:
             type: PathPrefix
-            value: /x-openapi-ui
+            value: /ot-openapi-ui
       backendRefs:
         - group: ""
           kind: Service
-          name: x-openapi-ui
+          name: ot-openapi-ui
           port: 80
     - matches:
         - path:
             type: Exact
-            value: /x-openapi
+            value: /ot-openapi
       filters:
         - type: URLRewrite
           urlRewrite:
@@ -46,5 +46,5 @@ spec:
       backendRefs:
         - group: ""
           kind: Service
-          name: x-hospital-api
+          name: ot-hospital-api
           port: 80

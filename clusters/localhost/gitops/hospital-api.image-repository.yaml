@@ -4,5 +4,5 @@ metadata:
   name: hospital-api
   namespace: wac-hospital
 spec:
-  image: sempresionus/hospital-wl-api
+  image: xkello/hospital-wl-api
   interval: 1m0s

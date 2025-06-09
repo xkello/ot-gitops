@@ -1,7 +1,7 @@
 apiVersion: polyfea.github.io/v1alpha1
 kind: WebComponent
 metadata:
-  name: mongo-express-xfe-content  # TODO: xfe
+  name: mongo-express-otfe-content  # TODO: otfe
 spec:
   element: iframe
   attributes:

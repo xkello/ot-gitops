@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: x-hospital-api
+  name: ot-hospital-api
 spec:
   type: NodePort
   ports:

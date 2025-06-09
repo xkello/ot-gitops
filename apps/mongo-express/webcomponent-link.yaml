@@ -1,7 +1,7 @@
 apiVersion: polyfea.github.io/v1alpha1
 kind: WebComponent
 metadata:
-  name: mongo-express-xfe-link
+  name: mongo-express-otfe-link
 spec:
   microFrontend: polyfea-md-shell
   element: polyfea-md-app

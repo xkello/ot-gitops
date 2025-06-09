@@ -1,18 +1,18 @@
 apiVersion: polyfea.github.io/v1alpha1
 kind: WebComponent
 metadata:
-  name: x-hospital-xfe-content
+  name: ot-hospital-otfe-content
 spec:
-  microFrontend: x-hospital-xfe
-  element: x-hospital-app
+  microFrontend: ot-hospital-otfe
+  element: ot-hospital-app
   attributes:
     - name: base-path
-      value: /x-hospital/
+      value: /ot-hospital/
     - name: api-base
-      value: /x-api
+      value: /ot-api
     - name: hospital-id
       value: hospital-ba
   displayRules:
     - allOf:
       - context-name: main-content
-      - path: "^(\\.?/)?x-hospital(/.*)?$"
+      - path: "^(\\.?/)?ot-hospital(/.*)?$"

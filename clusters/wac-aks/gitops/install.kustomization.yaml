@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: x-install  # TODO: xbelake # v spoločnom klastri je nasadených viacero takýchto objektov
+  name: ot-install
   namespace: wac-hospital
 spec:
   wait: true
@@ -10,4 +10,4 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: x-gitops-repo  # TODO: xbelake
+    name: ot-gitops-repo
