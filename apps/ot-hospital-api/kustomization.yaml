@@ -7,4 +7,4 @@ resources:
   - http-route.yaml
 
 patches:
-  - path: patches/hospital-webapi.deployment.yaml
+  - path: patches/hospital-api.deployment.yaml

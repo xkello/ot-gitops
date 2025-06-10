@@ -17,4 +17,4 @@ patches:
 
 components:
   - ../../../components/version-developers
-  - https://github.com/xkello/ambulance-api//deployments/kustomize/components/mongodb
+  - https://github.com/xkello/ambulance-otapi//deployments/kustomize/components/mongodb
