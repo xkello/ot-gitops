@@ -5,5 +5,5 @@ images:
     newName: xkello/ambulance-otfe # {"$imagepolicy":  "wac-hospital:ambulance-otfe:name"}
     newTag: main.20250609.2216 # {"$imagepolicy": "wac-hospital:ambulance-otfe:tag"}
   - name: xkello/hospital-wl-api
-    newName: sempresionus/hospital-wl-api # {"$imagepolicy":  "wac-hospital:hospital-api:name"}
+    newName: xkello/hospital-wl-api # {"$imagepolicy":  "wac-hospital:hospital-api:name"}
     newTag: main.20250609.2124 # {"$imagepolicy": "wac-hospital:hospital-api:tag"}
